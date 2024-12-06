@@ -1,0 +1,10 @@
+1. run docker desktop
+2. Enter command to build image : [docker build -t hello-world-app .]
+3. check docker desktop --> image of hello-world-app must have been created
+4. Enter command to run image in the local machine itself just to check the output : [docker run -it hello-world-app]
+5. If you want to push code to repo in docker hub
+    5.1. Go to docker hub & create repo there eg. test-repo
+    5.2. Tage image with your username & repo in hub : [docker tag hello-world-app your-dockerhub-username/your-repo-name:latest]
+            eg. [docker tag hello-world-app nikita237/test-repo:latest]
+    5.3. Push image to repo now : [docker push your-dockerhub-username/your-repo-name:latest]
+            eg. [docker push nikita237/test-repo:latest]
